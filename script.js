@@ -20,6 +20,6 @@ items.addEventListener('mouseup', () => {
 items.addEventListener('mousemove', (e) => {
   if (!isDown) return;
   e.preventDefault();
-  const walk = (e.pageX - startX); // distance moved
+  const walk = e.pageX - startX; // distance mouse moved
   items.scrollLeft = scrollLeft - walk;
 });
